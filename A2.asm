@@ -1,7 +1,7 @@
 #####################################################################
 #                                                                   #
 # Name: Aycan Deniz Vit                                             #
-# KUSIS ID:			                                                #
+# KUSIS ID: 59998                                                   #
 #####################################################################
 
 # This file serves as a template for creating 
@@ -20,7 +20,7 @@ msg:               .asciiz    "CORRECT COMMAND...Indicate Array Size:"
 right_bracket:	   .asciiz    "[ "
 left_bracket:	   .asciiz    "]\n"
 blank: 	           .asciiz    " "
-cmd:		       .asciiz    "-n"		           # string variable to validate input command
+cmd:	           .asciiz    "-n"		           # string variable to validate input command
 cmd_input:	       .space     CMD_LEN	           # cmd input
 
 arg_err_msg:       .asciiz   "Argument error"
