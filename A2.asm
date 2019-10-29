@@ -1,7 +1,7 @@
 #####################################################################
 #                                                                   #
 # Name: Aycan Deniz Vit                                             #
-# KUSIS ID: 		                                                    #
+# KUSIS ID: 		                                            #
 #####################################################################
 
 # This file serves as a template for creating 
@@ -18,16 +18,16 @@ input_data:        .space     MAX_LEN_BYTES     #Define length of input list
 reducted_list:     .space	  MAX_LEN_BYTES
 msg:               .asciiz    "CORRECT COMMAND...Indicate Array Size:"
 right_bracket:	   .asciiz    "[ "
-left_bracket:	     .asciiz    "]\n"
-blank: 			       .asciiz    " "
-cmd:			         .asciiz    "-n"		           # string variable to validate input command
-cmd_input:		     .space     CMD_LEN	           # cmd input
+left_bracket:	   .asciiz    "]\n"
+blank: 	           .asciiz    " "
+cmd:	           .asciiz    "-n"		           # string variable to validate input command
+cmd_input:	   .space     CMD_LEN	           # cmd input
 
 arg_err_msg:       .asciiz   "Argument error"
 input_msg:         .asciiz   "Input integers"
 sorted_msg:		     .asciiz   "Sorted List\n"
 sorted_wo_d_msg:   .asciiz   "Sorted List without Duplicates\n"
-list_sum_msg:	     .asciiz   "List Sum\n"
+list_sum_msg:	   .asciiz   "List Sum\n"
 enter_int_msg:     .asciiz   "Enter Integers:\n"
 dimErr_msg:        .asciiz   "Dimension cannot be larger than 100. Type again:\n"
 fnshd:             .asciiz   "\nProgram Finished"
@@ -269,8 +269,8 @@ print_wo_dup:
    		lw $a0, reducted_list($s7)
    		syscall
    		li $v0, 4
- 		  la $a0, blank
- 		  syscall
+ 		la $a0, blank
+ 		syscall
    		addi $s7, $s7, 4
    		bne $s7, $t2, while_wo_dup
 	
