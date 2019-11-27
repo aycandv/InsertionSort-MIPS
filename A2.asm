@@ -1,7 +1,7 @@
 #####################################################################
 #                                                                   #
 # Name: Aycan Deniz Vit                                             #
-# KUSIS ID: 59998                                                   #
+# KUSIS ID: 		                                            #
 #####################################################################
 
 # This file serves as a template for creating 
@@ -21,11 +21,11 @@ right_bracket:	   .asciiz    "[ "
 left_bracket:	   .asciiz    "]\n"
 blank: 	           .asciiz    " "
 cmd:	           .asciiz    "-n"		           # string variable to validate input command
-cmd_input:	       .space     CMD_LEN	           # cmd input
+cmd_input:	   .space     CMD_LEN	           # cmd input
 
 arg_err_msg:       .asciiz   "Argument error"
 input_msg:         .asciiz   "Input integers"
-sorted_msg:		   .asciiz   "Sorted List\n"
+sorted_msg:	   .asciiz   "Sorted List\n"
 sorted_wo_d_msg:   .asciiz   "Sorted List without Duplicates\n"
 list_sum_msg:	   .asciiz   "List Sum\n"
 enter_int_msg:     .asciiz   "Enter Integers:\n"
